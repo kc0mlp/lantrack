@@ -1,3 +1,5 @@
+FUTURE VERSION IDEAS
+
 -Station Based Security (Authorized access)
 -Change tracking (Track user edits to objects not just created_by and updated_at)
 -Support multiple codes for items and users with validation. (Example: 6 digit integer only or UPC code exclusion) Helps prevent scanning in correct codes.
