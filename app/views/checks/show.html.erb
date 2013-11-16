@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Item:</b>
+  <%= @check.item_id %>
+</p>
+
+<p>
+  <b>Attendee:</b>
+  <%= @check.attendee_id %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @check.event_id %>
+</p>
+
+<p>
+  <b>Is checked in:</b>
+  <%= @check.is_checked_in %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @check.created_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_check_path(@check) %> |
+<%= link_to 'Back', checks_path %>

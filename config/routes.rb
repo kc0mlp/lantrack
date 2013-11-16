@@ -1,4 +1,7 @@
 Lantrack::Application.routes.draw do
+  resources :checks
+
+
   resources :items
 
 

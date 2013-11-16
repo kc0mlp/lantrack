@@ -1,0 +1,31 @@
+<h1>Listing checks</h1>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Attendee</th>
+    <th>Event</th>
+    <th>Is checked in</th>
+    <th>Created by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @checks.each do |check| %>
+  <tr>
+    <td><%= check.item_id %></td>
+    <td><%= check.attendee_id %></td>
+    <td><%= check.event_id %></td>
+    <td><%= check.is_checked_in %></td>
+    <td><%= check.created_by %></td>
+    <td><%= link_to 'Show', check %></td>
+    <td><%= link_to 'Edit', edit_check_path(check) %></td>
+    <td><%= link_to 'Destroy', check, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Check', new_check_path %>
