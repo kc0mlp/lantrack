@@ -1,0 +1,33 @@
+<h1>Listing attendees</h1>
+
+<table>
+  <tr>
+    <th>Handle</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Phone number</th>
+    <th>Created by</th>
+    <th>Code</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @attendees.each do |attendee| %>
+  <tr>
+    <td><%= attendee.handle %></td>
+    <td><%= attendee.first_name %></td>
+    <td><%= attendee.last_name %></td>
+    <td><%= attendee.phone_number %></td>
+    <td><%= attendee.created_by %></td>
+    <td><%= attendee.code %></td>
+    <td><%= link_to 'Show', attendee %></td>
+    <td><%= link_to 'Edit', edit_attendee_path(attendee) %></td>
+    <td><%= link_to 'Destroy', attendee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Attendee', new_attendee_path %>

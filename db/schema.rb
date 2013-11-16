@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131115043004) do
+ActiveRecord::Schema.define(:version => 20131116021518) do
+
+  create_table "attendees", :force => true do |t|
+    t.string   "handle"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "phone_number"
+    t.integer  "created_by"
+    t.string   "code"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "attendees", ["code"], :name => "index_attendees_on_code", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "username"
