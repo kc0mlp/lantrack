@@ -1,3 +1,7 @@
+General Notes:
+-Basic models have all been added and must now be tested.
+
+
 FUTURE VERSION IDEAS
 
 -Station Based Security (Authorized access)
