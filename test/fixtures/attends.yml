@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  attendee_id: 1
+  event_id: 1
+  is_present: false
+  checkedin_at: 2013-11-15 20:37:27
+  checkedout_at: 2013-11-15 20:37:27
+  created_by: 1
+
+two:
+  attendee_id: 1
+  event_id: 1
+  is_present: false
+  checkedin_at: 2013-11-15 20:37:27
+  checkedout_at: 2013-11-15 20:37:27
+  created_by: 1

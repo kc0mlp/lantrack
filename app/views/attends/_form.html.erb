@@ -1,0 +1,41 @@
+<%= form_for(@attend) do |f| %>
+  <% if @attend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@attend.errors.count, "error") %> prohibited this attend from being saved:</h2>
+
+      <ul>
+      <% @attend.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :attendee_id %><br />
+    <%= f.number_field :attendee_id %>
+  </div>
+  <div class="field">
+    <%= f.label :event_id %><br />
+    <%= f.number_field :event_id %>
+  </div>
+  <div class="field">
+    <%= f.label :is_present %><br />
+    <%= f.check_box :is_present %>
+  </div>
+  <div class="field">
+    <%= f.label :checkedin_at %><br />
+    <%= f.datetime_select :checkedin_at %>
+  </div>
+  <div class="field">
+    <%= f.label :checkedout_at %><br />
+    <%= f.datetime_select :checkedout_at %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br />
+    <%= f.number_field :created_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

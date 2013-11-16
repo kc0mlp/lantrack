@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Attendee:</b>
+  <%= @attend.attendee_id %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @attend.event_id %>
+</p>
+
+<p>
+  <b>Is present:</b>
+  <%= @attend.is_present %>
+</p>
+
+<p>
+  <b>Checkedin at:</b>
+  <%= @attend.checkedin_at %>
+</p>
+
+<p>
+  <b>Checkedout at:</b>
+  <%= @attend.checkedout_at %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @attend.created_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_attend_path(@attend) %> |
+<%= link_to 'Back', attends_path %>

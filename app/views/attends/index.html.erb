@@ -1,0 +1,33 @@
+<h1>Listing attends</h1>
+
+<table>
+  <tr>
+    <th>Attendee</th>
+    <th>Event</th>
+    <th>Is present</th>
+    <th>Checkedin at</th>
+    <th>Checkedout at</th>
+    <th>Created by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @attends.each do |attend| %>
+  <tr>
+    <td><%= attend.attendee_id %></td>
+    <td><%= attend.event_id %></td>
+    <td><%= attend.is_present %></td>
+    <td><%= attend.checkedin_at %></td>
+    <td><%= attend.checkedout_at %></td>
+    <td><%= attend.created_by %></td>
+    <td><%= link_to 'Show', attend %></td>
+    <td><%= link_to 'Edit', edit_attend_path(attend) %></td>
+    <td><%= link_to 'Destroy', attend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Attend', new_attend_path %>

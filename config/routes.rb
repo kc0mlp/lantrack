@@ -1,4 +1,7 @@
 Lantrack::Application.routes.draw do
+  resources :attends
+
+
   resources :events
 
 
