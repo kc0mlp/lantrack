@@ -21,6 +21,8 @@ Lantrack::Application.routes.draw do
 
 
   resources :attendees
+  
+  resources :users
 
 
   # The priority is based upon order of creation:
