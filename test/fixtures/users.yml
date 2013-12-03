@@ -2,15 +2,15 @@
 
 one:
   username: TestUser1
-  hash: THISISAHASH!!!!!
-  created_by: 
+  crypt_hash: THISISAHASH!!!!!
+  created_by: 0
   first_name: Test1
   last_name: User1
   role_id: 1
 
 two:
   username: TestUser2
-  hash: THISISAHASH!!!!!
+  crypt_hash: THISISAHASH!!!!!
   created_by: 1
   first_name: Test2
   last_name: User2

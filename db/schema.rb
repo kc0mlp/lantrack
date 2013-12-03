@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131116030038) do
+ActiveRecord::Schema.define(:version => 20131203034312) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "role_id"
@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(:version => 20131116030038) do
 
   create_table "users", :force => true do |t|
     t.string   "username"
-    t.string   "hash"
+    t.string   "crypt_hash"
     t.integer  "created_by"
     t.string   "first_name"
     t.string   "last_name"

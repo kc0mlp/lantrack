@@ -10,3 +10,4 @@ FUTURE VERSION IDEAS
 -Support multiple codes for items and users with validation. (Example: 6 digit integer only or UPC code exclusion) Helps prevent scanning in correct codes.
 -Second Factor authentication and/or SQRL login.
 -Item type support.
+-Multiple Role Support with miximum permission derevation.
