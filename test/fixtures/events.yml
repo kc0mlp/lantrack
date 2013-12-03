@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
+  name: Event Created By Test User 1 (ADDR)
   start_at: 2013-11-15 20:29:03
   end_at: 2013-11-15 20:29:03
-  location: MyString
+  location: 1600 Pennsylvania Avenue Northwest, Washington, D.C., DC
   created_by: 1
 
 two:
-  name: MyString
+  name: Event Created By Test User 2 (LAT, LON)
   start_at: 2013-11-15 20:29:03
   end_at: 2013-11-15 20:29:03
-  location: MyString
-  created_by: 1
+  location: 38°53'52.22"N 77° 2'11.44"W
+  created_by: 2

@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  handle: MyString
-  first_name: MyString
-  last_name: MyString
-  phone_number: MyString
+  handle: TestAttendee1
+  first_name: Test1
+  last_name: Attendee1
+  phone_number: 123456789
   created_by: 1
-  code: MyString
+  code: AAAAAAAA
 
 two:
-  handle: MyString
-  first_name: MyString
-  last_name: MyString
-  phone_number: MyString
-  created_by: 1
-  code: MyString
+  handle: TestAttendee2
+  first_name: Test2
+  last_name: Attendee2
+  phone_number: 123456789
+  created_by: 2
+  code: 010101

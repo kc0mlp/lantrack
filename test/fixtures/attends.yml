@@ -9,9 +9,25 @@ one:
   created_by: 1
 
 two:
-  attendee_id: 1
+  attendee_id: 2
   event_id: 1
   is_present: false
   checkedin_at: 2013-11-15 20:37:27
   checkedout_at: 2013-11-15 20:37:27
   created_by: 1
+
+three:
+  attendee_id: 1
+  event_id: 2
+  is_present: true
+  checkedin_at: 2013-11-15 20:37:27
+  checkedout_at: 2013-11-15 20:37:27
+  created_by: 2
+
+four:
+  attendee_id: 2
+  event_id: 2
+  is_present: false
+  checkedin_at: 2013-11-15 20:37:27
+  checkedout_at: 2013-11-15 20:37:27
+  created_by: 2
