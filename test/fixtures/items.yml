@@ -2,18 +2,21 @@
 
 one:
   code: 000001
-  type: 1   # Not used in this version
+  type: 1   
+# Not used in this version
   name: Integer Code Item
   created_by: 1
 
 two:
   code: AAAAAA
-  type: 1   # Not used in this version
+  type: 1   
+# Not used in this version
   name: String Code Item
   created_by: 2
 
 three:
   code: A1A1A1
-  type: 1   # Not used in this version
+  type: 1   
+# Not used in this version
   name: Mixed Code Item
   created_by: 1
