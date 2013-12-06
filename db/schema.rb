@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131203034312) do
+ActiveRecord::Schema.define(:version => 20131206014054) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "role_id"
@@ -26,12 +26,12 @@ ActiveRecord::Schema.define(:version => 20131203034312) do
     t.string   "last_name"
     t.string   "phone_number"
     t.integer  "created_by"
-    t.string   "code"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.string   "attendee_code"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
-  add_index "attendees", ["code"], :name => "index_attendees_on_code", :unique => true
+  add_index "attendees", ["attendee_code"], :name => "index_attendees_on_code", :unique => true
 
   create_table "attends", :force => true do |t|
     t.integer  "attendee_id"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(:version => 20131203034312) do
   add_index "events", ["name"], :name => "index_events_on_name", :unique => true
 
   create_table "items", :force => true do |t|
-    t.string   "code"
+    t.string   "item_code"
     t.integer  "type"
     t.string   "name"
     t.integer  "created_by"

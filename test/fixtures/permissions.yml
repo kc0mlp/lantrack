@@ -2,8 +2,8 @@
 
 one:
   name: TestPermission1
-  description: A Test Permission 1
+  description: "A Test Permission 1"
 
 two:
   name: TestPermission2
-  description: A Test Permission 2
+  description: "A Test Permission 2"

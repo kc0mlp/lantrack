@@ -6,7 +6,7 @@ one:
   last_name: Attendee1
   phone_number: 123456789
   created_by: 1
-  code: AAAAAAAA
+  attendee_code: AAAAAAAA
 
 two:
   handle: TestAttendee2
@@ -14,4 +14,4 @@ two:
   last_name: Attendee2
   phone_number: 123456789
   created_by: 2
-  code: 010101
+  attendee_code: 010101

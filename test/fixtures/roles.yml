@@ -2,8 +2,8 @@
 
 one:
   name: Role1
-  description: Test Role 1
+  description: "Test Role 1"
 
 two:
   name: Role2
-  description: Test Role 2
+  description: "Test Role 2"
