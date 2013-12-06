@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: Role1
-  description: "Test Role 1"
+  role_name: Role1
+  role_description: "Test Role 1"
 
 two:
-  name: Role2
-  description: "Test Role 2"
+  role_name: Role2
+  role_description: "Test Role 2"

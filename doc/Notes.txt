@@ -1,0 +1,13 @@
+General Notes:
+-Added test data via fixtures for all models. Special attention should be paid to testing in the 'checks' model since this defines the relationshio between event, attendee and item.
+-Item type is not currently used and added to future version ideas.
+
+
+FUTURE VERSION IDEAS
+
+-Station Based Security (Authorized access).
+-Change tracking (Track user edits to objects not just created_by and updated_at).
+-Support multiple codes for items and users with validation. (Example: 6 digit integer only or UPC code exclusion) Helps prevent scanning in correct codes.
+-Second Factor authentication and/or SQRL login.
+-Item type support.
+-Multiple Role Support with miximum permission derevation.
