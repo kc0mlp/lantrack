@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Code</th>
-    <th>Type</th>
+    <th>Item Type</th>
     <th>Name</th>
     <th>Created by</th>
     <th></th>
@@ -14,7 +14,7 @@
 <% @items.each do |item| %>
   <tr>
     <td><%= item.item_code %></td>
-    <td><%= item.type %></td>
+    <td><%= item.item_type %></td>
     <td><%= item.name %></td>
     <td><%= item.created_by %></td>
     <td><%= link_to 'Show', item %></td>

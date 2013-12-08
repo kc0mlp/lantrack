@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131206034617) do
+ActiveRecord::Schema.define(:version => 20131208010733) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "role_id"
@@ -30,8 +30,6 @@ ActiveRecord::Schema.define(:version => 20131206034617) do
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
-
-  add_index "attendees", ["attendee_code"], :name => "index_attendees_on_code", :unique => true
 
   create_table "attends", :force => true do |t|
     t.integer  "attendee_id"
@@ -64,11 +62,9 @@ ActiveRecord::Schema.define(:version => 20131206034617) do
     t.datetime "updated_at", :null => false
   end
 
-  add_index "events", ["name"], :name => "index_events_on_name", :unique => true
-
   create_table "items", :force => true do |t|
     t.string   "item_code"
-    t.integer  "type"
+    t.integer  "item_type"
     t.string   "name"
     t.integer  "created_by"
     t.datetime "created_at", :null => false
@@ -82,16 +78,12 @@ ActiveRecord::Schema.define(:version => 20131206034617) do
     t.datetime "updated_at",  :null => false
   end
 
-  add_index "permissions", ["name"], :name => "index_permissions_on_name", :unique => true
-
   create_table "roles", :force => true do |t|
     t.string   "role_name"
     t.text     "role_description"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
-
-  add_index "roles", ["role_name"], :name => "index_roles_on_name", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "username"
